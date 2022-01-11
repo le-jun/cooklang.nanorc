@@ -1,0 +1,25 @@
+# FILENAME:    cooklang.nanorc
+# DESCRIPTION: Cooklang syntax highlighting for GNU nano text editor
+# Version:     0.1
+# DATE:        2022/01/11
+
+syntax "Cooklang" "\.cook$"
+
+# Cookware
+color green "#\S*\{"
+# Timer
+color blue "~\S*\{
+# Ingredients
+color red "@\S*\{"
+# Shopping list
+color cyan "\[\S*\]"
+# Comments
+color yellow "--.*"
+color yellow "\[\-\S*-\]"
+# Characters
+color cyan "(@|\{|\}|\%|\*|\#|\~)"
+# Metadata
+color yellow "^>>\S*^"
+# Pictures (.png or .jpg)
+color magenta ".*\.png"
+color magenta ".*\.jpg"
