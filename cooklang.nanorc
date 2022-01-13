@@ -15,7 +15,7 @@ color red "@[^\{]*\{"
 color cyan "\[[^\]]*\]"
 # Comments
 color yellow "--.*"
-color yellow "\[\-[-\]]*-\]"
+color yellow start="\[\-" end="\-\]"
 # Characters
 color cyan "(@|\{|\}|\%|\*|\#|\~)"
 # Metadata
